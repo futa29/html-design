@@ -37,29 +37,29 @@ li {
 }
 /* header start*/
 .header {
+    position: fixed;
     display: flex;
     height: 80px;
-    left: 0;
-    right: 0;
+    width: 100%;
+    max-width: 1360px;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    background-color: white;
 }
 .header_logo {
-    margin: 0 auto;
+    
     z-index: 99;
     padding-top: 15px;
     cursor: pointer;
 }
 .header_logo img {
-    width: 77%;
-    max-width: 100%;
+    
 }
 /* ハンバーガーメニュー */
 .header_menu {
-    margin: 0 auto;
+    margin-right: 2%;
     padding-top: 15px;
-    padding-right: 2.5%;
     z-index: 99; 
 }
 table td {
@@ -104,3 +104,24 @@ table td {
     height: 80px;
 }
 /* header end*/
+.annotation {
+    padding-top: 100px;
+}
+
+/* footer start*/
+footer {
+    margin-top: 100px;
+}
+.list ul {
+    display: flex;
+    position: relative;
+}
+.list li {
+    margin: 0 10px;
+}
+.company p {
+    position: absolute;
+    right: 30px;
+    font-size: 10px;
+}
+/* footer end*
