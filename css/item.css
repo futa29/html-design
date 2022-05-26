@@ -1,0 +1,21 @@
+.heading {
+    display: flex;
+    
+}
+img {
+    width: 500px;
+}
+
+.text {
+    margin-left: 15%;
+    margin-bottom: 3em;
+}
+.heading_text{
+    width: 40%;
+}
+table {
+    margin-left: 15%;
+}
+table td {
+    padding: 0;
+}
