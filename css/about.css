@@ -1,0 +1,11 @@
+p {
+    font-size: 14px;
+}
+
+.heading_text {
+    margin-top: 40px;
+}
+.heading_textArea {
+    margin-top: 30px;
+    width: 500px;
+}

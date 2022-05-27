@@ -115,9 +115,20 @@ table td {
     padding-top: 100px;
 }
 
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
 /* footer start*/
 footer {
-    margin-top: 100px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .list ul{
     display: flex;
