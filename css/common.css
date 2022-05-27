@@ -30,7 +30,7 @@ li {
 }
 
 .wrapper {
-    width: 100%;
+    width: 95%;
     max-width: 1360px;
     margin: 0 auto;
     
@@ -40,7 +40,7 @@ li {
     position: fixed;
     display: flex;
     height: 80px;
-    width: 100%;
+    width: 95%;
     max-width: 1360px;
     justify-content: space-between;
     align-items: center;
@@ -112,16 +112,30 @@ table td {
 footer {
     margin-top: 100px;
 }
-.list ul {
+.list ul{
     display: flex;
-    position: relative;
+    padding: 0;
+}
+.list_sns {
+    display: flex;
+    text-align: center;
 }
 .list li {
-    margin: 0 10px;
+    margin-right: 10px
 }
-.company p {
-    position: absolute;
-    right: 30px;
+.list_company {
+    margin-left: auto;
     font-size: 10px;
+}
+@media screen and (max-width:900px) { 
+    .list_company {
+        
+        flex-direction: column;
+    }
+    .list ul{
+        display: block;
+        padding: 0;
+    }
+
 }
 /* footer end*
