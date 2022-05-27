@@ -1,21 +1,47 @@
+p {
+    font-size: 14px;
+}
+
+
 .heading {
     display: flex;
     
 }
-img {
-    width: 500px;
+.heading img {
+    width: 400px;
+    height: 400px;
 }
 
 .text {
-    margin-left: 15%;
     margin-bottom: 3em;
 }
 .heading_text{
-    width: 40%;
-}
-table {
-    margin-left: 15%;
+    width: 35%;
+    margin-left: 7%;
 }
 table td {
     padding: 0;
+}
+.heading_tableText {
+    padding-left: 20px;
+}
+@media screen and (max-width:900px) { 
+    .heading {
+        display: contents;
+        
+    }
+    .heading img {
+        width: auto;
+        height: auto;
+    }
+    .heading_text{
+        width: 100%;
+        margin-left: 0;
+    }
+
+}
+
+.note {
+    margin-top: 100px;
+    text-align: center;
 }
