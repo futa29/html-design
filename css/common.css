@@ -29,6 +29,7 @@ li {
     list-style: none;
 }
 
+/* 写真など、要素が大きくなり過ぎないようにmax-widthを設定 */
 .wrapper {
     width: 95%;
     max-width: 1360px;
