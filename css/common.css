@@ -36,6 +36,48 @@ li {
     margin: 0 auto;
     
 }
+#index_nav {
+    position: fixed;
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.3s;
+}
+#index_nav.panelactive{
+	opacity: 1;
+	z-index:999;
+}
+#index_nav ul {
+    display: none;/*はじめは非表示*/
+    /*ナビゲーション天地中央揃え*/
+    position: absolute;
+    z-index: 999;
+    top:0%;
+    left:0%;
+    /* transform: translate(-50%,-50%); */
+}
+#index_nav.panelactive ul {
+    display: block;
+}
+#index_nav li{
+	list-style: none;
+    text-align: left; 
+}
+
+#index_nav li a{
+	color: #333;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+
+
 /* header start*/
 .header {
     position: fixed;
@@ -59,11 +101,15 @@ li {
 }
 /* ハンバーガーメニュー */
 .header_menu {
-    margin-right: 2%;
+    width: 30px;
+    height: 20px;
     padding-top: 15px;
     z-index: 99; 
+    position: fixed;
+    transition: all 0.6s;
 }
 table td {
+    cursor: pointer;
     padding: 15px;
     padding-top: 0;
     padding-bottom: 0;
@@ -78,6 +124,7 @@ table td {
     margin-bottom: 3px;
 }
 .header_menu-hamburgerMenu {
+    cursor: pointer;
     height: 20px;
 }
 .header_menu-hamburgerMenu label {
