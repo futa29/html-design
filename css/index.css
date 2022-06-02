@@ -2,10 +2,10 @@
     margin-top: 100px;
 }
 #imageList .container {
+    /* グリッドレイアウト使用 */
     display: grid;
     width: 100%;
     gap: 30px 20px;
-
 }
 .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8{
     font-size: 12px;
@@ -15,7 +15,6 @@
     grid-column: 4;
 }
 @media screen and (max-width: 900px) {
-
     #imageList .container {
         display: grid;
         height: auto;
@@ -25,9 +24,7 @@
         "areaC areaD"
         "areaE areaF"
         "areaG areaH";
-    
     }
-
     .item1 {
         grid-area: areaA;
     }
@@ -39,21 +36,5 @@
     }
     .item4 {
         grid-area: areaD;
-    }
-    .item5 {
-        grid-area: areaE;
-    }
-    .item6 {
-        grid-area: areaF;
-    }
-    .item7 {
-        grid-area: areaG;
-    }
-    .item8 {
-        grid-area: areaH;
-    }
-
-
+    } 
 }
-
-
