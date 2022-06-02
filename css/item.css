@@ -1,6 +1,5 @@
-
-
-.heading{
+/* 画像とテキストを横並び */
+.heading {
     display: flex;
 }
 .heading p {
@@ -10,25 +9,25 @@
     width: 400px;
     height: 400px;
 }
-
 .text {
     margin-bottom: 3em;
     width: 500px;
 }
-.heading_text{
+.heading_text {
     width: 35%;
     margin-left: 7%;
 }
 table td {
+    /* 自動生成されるpaddingを0に設定 */
     padding: 0;
 }
 .heading_tableText {
     padding-left: 20px;
 }
 @media screen and (max-width:900px) { 
+    /* スマホ画面では縦並びに変更 */
     .heading {
-        display: contents;
-        
+        display: contents;  
     }
     .heading img {
         width: auto;
@@ -41,10 +40,4 @@ table td {
     .text {
         width: 100%;
     }
-
-}
-
-.note {
-    margin-top: 100px;
-    text-align: center;
 }
