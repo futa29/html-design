@@ -1,24 +1,28 @@
-.heading_summary-lead{
-    padding-left: 40px;
-    width: 400px;
-    
-}
-.heading_summary-leader {
-    padding-left: 40px;
-    line-height: 25px;
-}
-.heading_summary-table {
+.heading_summaryTable {
     border-bottom: solid 0.5px #000000;
     line-height: 44px;
     width: 100%;
 }
+/* ボーダーラインを引くために必要な設定 */
 .heading_summary table {
     border-collapse: collapse;
 }
+/* 一番下のテーブルはボーダーラインを引かないため、取り消し */
 .heading_summary-tabler {
     border-bottom: 0;
 }
+.heading_summary-lead{
+    /* 文と文の感覚を空ける */
+    padding-left: 40px;
+    width: 400px;
+}
+.heading_summary-leader {
+    padding-left: 40px;
+    /* この文は間隔を空けすぎないように調整 */
+    line-height: 25px;
+}
 
+/* テーブルを縦並び、横幅まで取る */
 @media screen and (max-width:900px) { 
     .heading_summary table td{
         display: block;
@@ -27,7 +31,6 @@
     .heading_summary table {
         width: 100%;
     }
-
 }
 
 .googlemap {
@@ -38,8 +41,8 @@
     width: 550px;
     height: 300px;
 }
+/* マップを横幅まで取る */
 @media screen and (max-width:900px) { 
-    
     .googlemap iframe {
         width: 100%;
         height: 300px;
