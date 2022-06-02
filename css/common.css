@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 html {
     /* フォントサイズを１００％に設定しておくことでユーザがブラウザで指定したフォントサイズが正しく反映される */
     font-size: 100%;
@@ -11,13 +10,18 @@ body {
     max-width: 100%;
     margin: 0;
     background-color: white;
+    /* フッターを最下層に固定するために必要 */
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+main {
+    /* フッターを最下層に固定するために必要 */
+    flex: 1;
 }
 img {
     /* 画像が画面の横幅からはみ出るのを防ぐためにmaxサイズを設定 */
     max-width: 100%;
-}
-h1 {
-    font-family: 'Montserrat', sans-serif;
 }
 a {
     text-decoration: none;
@@ -30,44 +34,41 @@ li {
     list-style: none;
 }
 
-/* 写真など、要素が大きくなり過ぎないようにmax-widthを設定 */
+/* ヘッダーからフッターまでをまとめたwrapperクラスを作成 */
 .wrapper {
     width: 95%;
     max-width: 1360px;
     margin: 0 auto;
-    
 }
+/* 右上のハンバーガーメニューをクリックすると表示されるナビゲーション */
 #index_nav {
     position: fixed;
+    /* クリックされるまでは表示させない */
     z-index: -1;
     opacity: 0;
     top: 0;
     width: 100%;
     height: 100vh;
+    /* 若干透けるようにするために0.7を設定 */
     background: rgba(0, 0, 0, 0.7);
+    /* 動きを滑らかに設定 */
     transition: all 0.3s;
 }
+/* クリックされると前面に表示 */
 #index_nav.panelactive{
 	opacity: 1;
 	z-index:999;
 }
 #index_nav ul {
     display: none;/*はじめは非表示*/
-    /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
     top:0%;
     left:0%;
-    /* transform: translate(-50%,-50%); */
 }
 #index_nav.panelactive ul {
     display: block;
 }
-#index_nav li{
-	list-style: none;
-    text-align: left; 
-}
-
 #index_nav li a{
 	color: white;
 	text-decoration: none;
@@ -78,8 +79,6 @@ li {
 	font-weight: bold;
     font-size: 12px;
 }
-
-
 /* header start*/
 .header {
     position: fixed;
@@ -93,7 +92,6 @@ li {
     background-color: white;
 }
 .header_logo {
-    
     z-index: 99;
     padding-top: 15px;
     cursor: pointer;
@@ -156,19 +154,11 @@ table td {
     width: 100%;
     height: 80px;
 }
-
 /* header end*/
+/* ヘッダー下の文(トップページには無い) */
 .annotation {
     padding-top: 100px;
     padding-bottom: 30px;
-}
-body {
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-}
-main {
-    flex: 1;
 }
 .note {
     margin-top: 90px;
@@ -176,7 +166,6 @@ main {
     margin-bottom: 90px;
 }
 /* footer start*/
-
 .list ul{
     display: flex;
     padding: 0;
@@ -194,13 +183,11 @@ main {
 }
 @media screen and (max-width:900px) { 
     .list_company {
-        
         flex-direction: column;
     }
     .list ul{
         display: block;
         padding: 0;
     }
-
 }
 /* footer end*

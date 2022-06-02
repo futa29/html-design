@@ -37,6 +37,7 @@
     margin-top: 30px;
 }
 .googlemap iframe {
+    /* マップにグレーフィルターをかける */
     filter: grayscale(100%);
     width: 550px;
     height: 300px;
