@@ -1,27 +1,18 @@
-
-
-.annotation {
-    padding-top: 100px;
-}
-#imageList {
-    margin-top: 50px;
-}
-
 #imageList .container {
     display: grid;
     width: 100%;
     gap: 70px 20px;
     justify-content: space-between;
-
 }
 .item1 {
     cursor: pointer;
 }
-
+/* 並びを4列にするためitem４をrow1、column4に設定 */
 .item4 {
     grid-row: 1;
     grid-column: 4;
 }
+/* スマホ画面は２列に変更 */
 @media screen and (max-width:900px) { 
     .item3 {
         grid-row: 2;
@@ -34,32 +25,11 @@
 
 }
 
-.note {
-    margin-top: 100px;
-    text-align: center;
-}
-
-
-
-
-
 /* containerSecondページ */
 .containerSecond {
     display:grid;
     margin: 0 auto;
     gap: 70px 20px;
-}
-.item13 {
-    grid-row: 1;
-    grid-column: 1;
-}
-.item14 {
-    grid-row: 1;
-    grid-column: 2;
-}
-.item15 {
-    grid-row: 1;
-    grid-column: 3;
 }
 .item16 {
     grid-row: 1;
