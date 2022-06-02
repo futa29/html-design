@@ -76,6 +76,7 @@ li {
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 	font-weight: bold;
+    font-size: 12px;
 }
 
 
@@ -98,7 +99,7 @@ li {
     cursor: pointer;
 }
 .header_logo img {
-    
+    width: 200px;
 }
 /* ハンバーガーメニュー */
 .header_menu {
@@ -137,11 +138,14 @@ table td {
     background-color: black;
     content: "";
     position: absolute;
+    cursor: pointer;
 }
 .header_menu-hamburgerMenu span::before {
+    cursor: pointer;
     top: 7px;
 }
 .header_menu-hamburgerMenu span::after {
+    cursor: pointer;
     top: 14px;
 }
 .header_backgroundBrack {
@@ -170,12 +174,12 @@ body {
 main {
     flex: 1;
 }
-/* footer start*/
-footer {
-    width: 95%;
-    margin-right: auto;
-    margin-left: auto;
+.note {
+    margin-top: 90px;
+    text-align: center;
+    margin-bottom: 90px;
 }
+/* footer start*/
 .list ul{
     display: flex;
     padding: 0;

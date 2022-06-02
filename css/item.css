@@ -1,11 +1,10 @@
-p {
-    font-size: 14px;
-}
 
 
-.heading {
+.heading{
     display: flex;
-    
+}
+.heading p {
+    font-size: 14px;
 }
 .heading img {
     width: 400px;
@@ -14,6 +13,7 @@ p {
 
 .text {
     margin-bottom: 3em;
+    width: 500px;
 }
 .heading_text{
     width: 35%;
@@ -37,6 +37,9 @@ table td {
     .heading_text{
         width: 100%;
         margin-left: 0;
+    }
+    .text {
+        width: 100%;
     }
 
 }
