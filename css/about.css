@@ -1,7 +1,6 @@
 p {
     font-size: 14px;
 }
-
 .heading_text {
     margin-top: 40px;
 }
@@ -9,6 +8,7 @@ p {
     margin-top: 30px;
     width: 500px;
 }
+/* footerを最下層に固定が結局できませんでした */
 .list_sns {
     margin: auto;
 }
@@ -16,7 +16,6 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
-
 @media screen and (max-width:900px) { 
     .heading_textArea{
         width: auto;
