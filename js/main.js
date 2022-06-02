@@ -16,3 +16,11 @@ $("#index_nav a").click(function () {//ナビゲーションのリンクがク�
 $('#index_nav').click(function(){
     $('#index_nav').removeClass('panelactive');
 });
+
+
+$(function(){
+    var $ftr = $('#footer');
+    if( window.innerHeight > $ftr.offset().top + $ftr.outerHeight() ){
+    $ftr.attr({'style': 'position:fixed; top:' + (window.innerHeight - $ftr.outerHeight()) + 'px;' });
+    }
+});
