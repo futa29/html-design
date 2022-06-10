@@ -8,7 +8,10 @@ p {
     margin-top: 30px;
     width: 500px;
 }
-/* footerを最下層に固定が結局できませんでした */
+footer {
+    position: absolute;
+    bottom: 20px;
+}
 .list_sns {
     margin: auto;
 }
