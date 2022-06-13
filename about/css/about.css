@@ -26,6 +26,9 @@ ul {
 .list_sns {
     margin:0;
 }
+.list_text {
+    padding-left: 10px;
+}
 .list_company {
     margin: 0;
 }
